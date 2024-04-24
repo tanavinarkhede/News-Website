@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arts</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="./art.css" >
+
+</head>
+<body >
+
+<header class="header">
+
+    <!-- <a href="#" class="logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7O3-VEub5cFnZsrgHI4kLTJbz3qosIz4kyr9fB9DZE6LFWH_lZCsgxDoESgj5QDGZzMY&usqp=CAU" alt="">
+		
+    </a> -->
+
+    <nav class="navbar">
+        <h1>Arts</h1>
+        <!-- <a href="HotelHomePage.html">Home</a>
+        <a href="AboutHotel.html">About</a>
+        <a href="RoomHotel.html">Rooms</a>
+        <a href="FoodHotel.html">Food</a>
+        <a href="ContactHotel.html">Contact</a>
+		<a href="#logout">Logout</a> -->
+    </nav>
+
+    
+</header>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<form>
+
+    <div class="container posts" >
+        <!-- <div class="blogs"> -->
+        
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  
+    <div class="mybox">
+        <script>
+            var url=" https://newsapi.org/v2/top-headlines?country=in&pagesize=23&category=science&apiKey=15f2ab0ddc7f4ae49757ed1d83bdee9e";
+            // var url="https://newsdata.io/api/1/news?apikey=13357aa8ba2b4e41a21d0cdbe0447261&q=cryptocurrency"
+            $.get(url,(response)=>{
+                var html=`<section class="timeline_area">
+        <div class="time">
+            
+                <div>
+            <h2>${response.articles[8].title}</h2>
+            <h3>${response.articles[8].publishedAt} | ${response.articles[8].source.name}</h3>
+        </div>
+        </div>
+    
+    
+        <div class="time">
+            <h2>${response.articles[9].title}</h2>
+            <h3>${response.articles[9].publishedAt} | ${response.articles[9].source.name}</h3>
+            
+        </div>
+    
+        <div class="time">
+            <h2>${response.articles[10].title}</h2>
+            <h3>${response.articles[10].publishedAt} | ${response.articles[10].source.name}</h3>
+            
+        </div>
+    
+        <div class="time">
+            <h2>${response.articles[11].title}</h2>
+            <h3>${response.articles[11].publishedAt} | ${response.articles[11].source.name}</h3>
+            
+        </div>
+        
+            <div class="time">
+                <h2>${response.articles[12].title}</h2>
+                <h3>${response.articles[12].publishedAt} | ${response.articles[12].source.name}</h3>
+                
+            </div>
+            <div class="time">
+                <h2>${response.articles[13].title}</h2>
+                <h3>${response.articles[13].publishedAt} | ${response.articles[13].source.name}</h3>
+                
+            </div>
+            <div class="time">
+                <h2>${response.articles[14].title}</h2>
+                <h3>${response.articles[14].publishedAt} | ${response.articles[14].source.name}</h3>
+                
+            </div>
+            <div class="time">
+            <h2>${response.articles[15].title}</h2>
+            <h3>${response.articles[15].publishedAt} | ${response.articles[15].source.name}</h3>
+            
+        </div>
+        
+            <div class="time">
+                <h2>${response.articles[16].title}</h2>
+                <h3>${response.articles[16].publishedAt} | ${response.articles[16].source.name}</h3>
+                
+            </div>
+            <div class="time">
+                <h2>${response.articles[17].title}</h2>
+                <h3>${response.articles[17].publishedAt} | ${response.articles[17].source.name}</h3>
+                
+            </div>
+            <div class="time">
+                <h2>${response.articles[18].title}</h2>
+                <h3>${response.articles[18].publishedAt} | ${response.articles[18].source.name}</h3>
+                
+            </div>
+            <div class="time">
+                <h2>${response.articles[19].title}</h2>
+                <h3>${response.articles[19].publishedAt} | ${response.articles[19].source.name}</h3>
+                
+            </div>
+            <div class="time">
+                <h2>${response.articles[20].title}</h2>
+                <h3>${response.articles[20].publishedAt} | ${response.articles[20].source.name}</h3>
+                
+            </div>
+            <div class="time">
+                <h2>${response.articles[21].title}</h2>
+                <h3>${response.articles[21].publishedAt} | ${response.articles[21].source.name}</h3>
+                
+            </div>
+            <div class="time">
+                <h2>${response.articles[22].title}</h2>
+                <h3>${response.articles[22].publishedAt} | ${response.articles[22].source.name}</h3>
+                
+            </div>
+          
+     
+    
+    
+    </section>`;
+    $(".posts").append(html);
+    }
+    // }
+    );
+    </script>
+    </div>
+  
+     
+      <div class="mybox">
+    
+    <script>
+        var url=" https://newsapi.org/v2/top-headlines?country=in&pagesize=8&category=science&apiKey=15f2ab0ddc7f4ae49757ed1d83bdee9e";
+        // var url="https://newsdata.io/api/1/news?apikey=13357aa8ba2b4e41a21d0cdbe0447261&q=cryptocurrency"
+        $.get(url,(response)=>{
+  console.log(response.articles[0]);
+    for(i=0;i<response.articles.length;i++){
+      var html=`
+      <div class="blog-post">
+        <div class="blog-post_img">
+            <img src="${response.articles[i].urlToImage}" alt="">
+        </div>
+        <div class="blog-post_info">
+            <div class="blog-post_date">
+  
+               <span>${response.articles[i].publishedAt} | ${response.articles[i].source.name}</span>
+            
+            </div>
+            
+    <h1 class="blog-post_title">${response.articles[i].title}</h1>
+    <br>
+    <p class="blog-post_text"> ${response.articles[i].content}
+    </p>
+    <a href="${response.articles[i].url}" class="blog-post_cta">Read More</a>
+    <br>
+    </div>
+  </div>
+  <br>
+  <br>`;
+        $(".posts").append(html);
+  }
+  });
+  
+    </script>
+    <script>
+      var url=" https://newsapi.org/v2/top-headlines?country=in&pagesize=50&category=science&apiKey=15f2ab0ddc7f4ae49757ed1d83bdee9e";
+      // var url="https://newsdata.io/api/1/news?apikey=13357aa8ba2b4e41a21d0cdbe0447261&q=cryptocurrency"
+      $.get(url,(response)=>{
+          var html=`
+          <div class="imageex">
+            <hr class="new1">
+            <h2> News Gallery</h2>
+            <br>
+            <div class="wrapper">
+  <div class="card">
+      <img src="${response.articles[23].urlToImage}">
+      <div class="info">
+          <h1>${response.articles[23].title}</h1>
+          <p>${response.articles[23].content}</p>
+          <a href="${response.articles[23].url}" class="btn">Read More</a>
+      </div>
+  
+  </div>
+  
+  <div class="card">
+      <img src="${response.articles[24].urlToImage}">
+      <div class="info">
+          <h1>${response.articles[24].title}</h1>
+          <p>${response.articles[24].content}</p>
+          <a href="${response.articles[24].url}" class="btn">Read More</a>
+      </div>
+  
+  </div>
+  
+  <div class="card">
+      <img src="${response.articles[25].urlToImage}">
+      <div class="info">
+          <h1>${response.articles[25].title}</h1>
+          <p>${response.articles[25].content}</p>
+          <a href="${response.articles[25].url}" class="btn">Read More</a>
+      </div>
+  
+  </div>
+  
+  </div>
+  `;
+  
+  $(".posts").append(html);
+  }
+  );
+  </script>
+  <br>
+  <hr>
+  <br>
+  
+  </script>
+  <script>
+    var url="https://newsapi.org/v2/everything?q=science&apiKey=15f2ab0ddc7f4ae49757ed1d83bdee9e";
+    // var url="https://newsdata.io/api/1/news?apikey=13357aa8ba2b4e41a21d0cdbe0447261&q=cryptocurrency"
+    $.get(url,(response)=>{
+        var html=`
+        <div class="imageex">
+          
+         
+          <br>
+          <div class="wrapper2">
+  <div class="card2">
+    <img src="${response.articles[26].urlToImage}">
+    <div class="info">
+        <h1>${response.articles[26].title}</h1>
+        <p>${response.articles[26].content}</p>
+        <a href="${response.articles[26].url}" class="btn">Read More</a>
+    </div>
+  
+  </div>
+  
+  <div class="card2">
+    <img src="${response.articles[27].urlToImage}">
+    <div class="info">
+        <h1>${response.articles[27].title}</h1>
+        <p>${response.articles[27].content}</p>
+        <a href="${response.articles[27].url}" class="btn">Read More</a>
+    </div>
+  
+  </div>
+  
+  <div class="card2">
+    <img src="${response.articles[28].urlToImage}">
+    <div class="info">
+        <h1>${response.articles[28].title}</h1>
+        <p>${response.articles[28].content}</p>
+        <a href="${response.articles[28].url}" class="btn">Read More</a>
+    </div>
+  
+  </div>
+  
+  </div>
+  `;
+  
+  $(".posts").append(html);
+  }
+  );
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+:root{
+    --main-color:#d3ad7f;
+    --black:#13131a;
+    --bg:#010103;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background: white;
+}
+
+section{
+    padding:2rem 7%;
+}
+
+.heading{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color:var(--main-color);
+    text-transform: uppercase;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.header .navbar h1{
+    color: bisque;
+    font-size: 25px;
+}
+
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1.6rem;
+    color:#fff;
+}
+
+.header .navbar a:hover{
+    color:var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    
+    font-size: 10px;
+}
+img{
+    width: 100%;
+}
+
+body{
+    margin-top: 50%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    padding: 2 9rem;
+    padding-left: 20%;
+}
+.mybox {
+   align-items: center;
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+    
+  }
+.blog-post{
+    width: 65%;
+    height: 20rem;
+    /* padding: 5rem; */
+    /* padding: 5rem; */
+    background-color: #fff;
+    box-shadow: 0 1.4rem 8rem rgba(0,0,0,.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex: 0 0 66.66667%;
+    max-width: 66.66667%; */
+    border-radius: .8rem;
+}   
+.blog-post_img{
+    min-width: 26rem;
+    max-width: 26rem;
+    height: 18rem;
+    transform: translateX(-2rem);
+    position: relative;
+}
+
+.blog-post_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: .8rem;
+}
+
+.blog-post_img::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: linear-gradient(to right, rgba(79, 172, 254, .8),rgba(0, 242, 254,.8)); */
+    box-shadow: .5rem .5rem 3rem 1px rgba(0,0,0,.05);
+    border-radius: .8rem;
+}
+
+.blog-post_date{
+    display: block;
+    /* margin-bottom: 20rem; */
+    color: rgba(0,0,0, 0.5);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: .1rem 0;
+}
+
+.blog-post_title{
+    font-size: 1.5rem;
+
+    /* text-transform: uppercase; */
+    color: #174d7c;
+    /* color: rgba(0, 0, 0, .7); */
+}
+
+.blog-post_text{
+    /* margin-bottom: 3rem; */
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.993);
+}
+
+.blog-post_cta{
+    display: inline-block;
+    padding: 1.1rem 1rem;
+    font-size: 1.1rem;
+    color: #fff;
+    background-image: linear-gradient(to right, #1f2325 0%, #4a377e 100% );
+    border-radius: .8rem;
+    text-decoration: none;
+}
+.blog-post_cta:hover{
+    background-image: linear-gradient(to right, #061c1d 0%), #222a31 100%;
+}
+
+@media screen and (max-width:868px) {
+    .blog-post{
+        max-width: 70rem;
+    }
+    
+
+@media screen and (max-width:768px) {
+    .blog-post{
+        padding: 2.5rem;
+        flex-direction: column;
+    }
+    .blog-post_img{
+        min-width: 100%;
+        max-width: 100%;
+        transform: translate(3, -8rem);
+    }
+}
+}
